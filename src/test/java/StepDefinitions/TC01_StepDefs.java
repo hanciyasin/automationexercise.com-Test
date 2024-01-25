@@ -48,6 +48,8 @@ public class TC01_StepDefs {
 
     @And("Verify that ENTER ACCOUNT INFORMATION is visible")
     public void verifyThatENTERACCOUNTINFORMATIONIsVisible() {
+        Driver.getDriver().navigate().refresh();
+        Driver.getDriver().navigate().refresh();
         Assert.assertTrue(page.enterAccInfTxt.isDisplayed());
     }
 
@@ -75,7 +77,8 @@ public class TC01_StepDefs {
 
     @And("Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number")
     public void fillDetailsFirstNameLastNameCompanyAddressAddressCountryStateCityZipcodeMobileNumber() {
-        page.firstNameBox.sendKeys(ConfigReader.getProperty("name"),Keys.TAB,
+        page.firstNameBox.click();
+        page.firstNameBox.sendKeys(Keys.TAB,ConfigReader.getProperty("name"),Keys.TAB,
                 ConfigReader.getProperty("lastname"),Keys.TAB,Keys.TAB,
                 "Random Adress",Keys.TAB,Keys.TAB,
                 "Canada",Keys.TAB,
