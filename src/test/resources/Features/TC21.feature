@@ -1,10 +1,11 @@
-Test Case 21: Add review on product
-1. Launch browser
-2. Navigate to url 'http://automationexercise.com'
-3. Click on 'Products' button
-4. Verify user is navigated to ALL PRODUCTS page successfully
-5. Click on 'View Product' button
-6. Verify 'Write Your Review' is visible
-7. Enter name, email and review
-8. Click 'Submit' button
-9. Verify success message 'Thank you for your review.'
+Feature: Add review on product
+
+  Scenario: TC21 Add review on product
+    Given Navigate to website
+    Then Click on 'Products' button
+    And Verify user is navigated to ALL PRODUCTS page successfully
+    And Click on 'View Product' button
+    And Verify 'Write Your Review' is visible
+    And Enter name, email and review
+    And Click 'Submit' button
+    And Verify success message 'Thank you for your review.'
