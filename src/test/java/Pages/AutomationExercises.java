@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class AutomationExercises {
     public AutomationExercises() {PageFactory.initElements(Driver.getDriver(),this);}
     @FindBy(xpath = "//a[@href='/login']")
-    public WebElement loginButton;
+    public WebElement signUpLoginButton;
     @FindBy(xpath = "//*[.='New User Signup!']")
     public WebElement newUserSignupTxt;
    @FindBy(xpath = "//*[@name='name']")
@@ -31,4 +31,12 @@ public class AutomationExercises {
     public WebElement firstNameBox;
    @FindBy(xpath = "//*[.='Create Account']")
     public WebElement createAccButton;
+   @FindBy(xpath = "//*[.='Login to your account']")
+    public WebElement LoginToYourAccTxt;
+   @FindBy(xpath = "//*[@data-qa='login-email']")
+    public WebElement emailBox;
+   @FindBy(xpath = "//button[.='Login']")
+    public WebElement loginButton;
+   @FindBy(xpath = "//li/a[contains(text(), 'Logged in as')]")
+    public WebElement loggedAs;
 }

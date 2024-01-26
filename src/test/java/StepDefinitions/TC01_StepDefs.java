@@ -21,14 +21,10 @@ public class TC01_StepDefs {
         Driver.getDriver().get(ConfigReader.getProperty("automationExerciseUrl"));
     }
 
-    @Then("Verify that home page is visible successfully")
-    public void verifyThatHomePageIsVisibleSuccessfully() {
-
-    }
 
     @And("Click on Signup-Login button")
     public void clickOnSignupLoginButton() {
-        page.loginButton.click();
+        page.signUpLoginButton.click();
     }
 
     @And("Verify New User Signup! is visible")
@@ -93,24 +89,5 @@ public class TC01_StepDefs {
         page.createAccButton.click();
     }
 
-    @And("Verify that ACCOUNT CREATED! is visible")
-    public void verifyThatACCOUNTCREATEDIsVisible() {
-    }
-
-    @And("Click Continue button")
-    public void clickContinueButton() {
-    }
-
-    @And("Verify that Logged in as username is visible")
-    public void verifyThatLoggedInAsUsernameIsVisible() {
-    }
-
-    @And("Click Delete Account button")
-    public void clickDeleteAccountButton() {
-    }
-
-    @And("Verify that ACCOUNT DELETED! is visible and click Continue button")
-    public void verifyThatACCOUNTDELETEDIsVisibleAndClickContinueButton() {
-    }
 }
 
