@@ -39,4 +39,8 @@ public class AutomationExercises {
     public WebElement loginButton;
    @FindBy(xpath = "//li/a[contains(text(), 'Logged in as')]")
     public WebElement loggedAs;
+  @FindBy(xpath = "//p[.='Your email or password is incorrect!']")
+    public WebElement incorrectMailTxt;
+@FindBy(xpath = "//*[@href='/logout']")
+    public WebElement logoutButton;
 }
